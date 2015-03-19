@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Titlebar Manupulation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="design_patterns">
+        <item>Abstract Factory</item>
+        <item>Builder</item>
+        <item>Factory Method</item>
+        <item>Prototype</item>
+        <item>Singleton</item>
+        <item>Adapter</item>
+        <item>Bridge</item>
+        <item>Composite</item>
+        <item>Decorator</item>
+        <item>Facade</item>
+        <item>Flyweight</item>
+        <item>Proxy</item>
+        <item>Chain of responsibility</item>
+        <item>Command</item>
+        <item>Interpreter</item>
+        <item>Iterator</item>
+        <item>Mediator</item>
+        <item>Memento</item>
+        <item>Observer</item>
+        <item>State</item>
+        <item>Strategy</item>
+        <item>Template method</item>
+        <item>Visitor</item>
+        <item>Abstract Factory</item>
+        <item>Builder</item>
+        <item>Factory Method</item>
+        <item>Prototype</item>
+        <item>Singleton</item>
+        <item>Adapter</item>
+        <item>Bridge</item>
+        <item>Composite</item>
+        <item>Decorator</item>
+        <item>Facade</item>
+        <item>Flyweight</item>
+        <item>Proxy</item>
+        <item>Chain of responsibility</item>
+        <item>Command</item>
+        <item>Interpreter</item>
+        <item>Iterator</item>
+        <item>Mediator</item>
+        <item>Memento</item>
+        <item>Observer</item>
+        <item>State</item>
+        <item>Strategy</item>
+        <item>Template method</item>
+        <item>Visitor</item>
+    </string-array>
+
+</resources>
