@@ -2,15 +2,20 @@ package com.vishnu.titlebarmanupulation;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
 
+    private ScrollView sv;
+    private RelativeLayout rl;
     private TextView tv1;
     private TextView tv2;
     private ListView listView;
@@ -22,16 +27,28 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         // Find the view
+        this.sv = (ScrollView) findViewById(R.id.scrollView);
+        sv.setSmoothScrollingEnabled(true);
+//        sv.setNestedScrollingEnabled(true);
+        this.rl = (RelativeLayout) findViewById(R.id.rl);
         this.tv1 = (TextView) findViewById(R.id.textView1);
         this.tv2 = (TextView) findViewById(R.id.textView2);
         this.listView = (ListView) findViewById(R.id.listView);
+        listView.setSmoothScrollbarEnabled(true);
+//        listView.setNestedScrollingEnabled(true);
 
         // Create the arrays
         this.designPatterns = getResources().getStringArray(R.array.design_patterns);
 
+        for (String str: designPatterns) {
+            Log.d("Array", str);
+        }
+
         // Create an array adapter
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, designPatterns);
         listView.setAdapter(adapter);
+
+
 
     }
 
